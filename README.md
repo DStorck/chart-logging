@@ -2,16 +2,14 @@
 This is a lightweightlogging solution for a production grade Kubernetes cluster. This system ensures events are safely pulled from pods, enriched with Kubernetes metadata, saved in a data store and made available for visualizing and querying - without ever leaving the kubernetes cluster.
 
 ## How to install on running Kubernetes cluster with `helm`
+Get Helm [here](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 Make sure your cluster has at least 6 clusterNodes and update the providerConfig.type to m4.xlarge
 Install Helm and the Helm registry plugin with [these](https://github.com/app-registry/appr-helm-plugin/blob/master/README.md#install-the-helm-registry-plugin) instructions.
 
 ```
 helm registry install quay.io/samsung_cnct/logging
 ```
-```$ helm repo add cnct http://atlas.cnct.io```
-```$ helm install cnct/central-logging```
 
-Get Helm [here](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
 Or add the following to your [K2](https://github.com/samsung-cnct/kraken-lib) configuration template:
 
