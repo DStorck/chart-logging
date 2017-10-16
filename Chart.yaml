@@ -1,5 +1,5 @@
-name: logging
-version: ${CHART_VER}-${CHART_REL}
+name: chart-logging
+version: 0.0.0
 description: Logging chart for fluent-bit -> elasticsearch (+ curator) -> kibana
 keywords:
 - kraken
