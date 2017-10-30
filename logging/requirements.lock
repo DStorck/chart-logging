@@ -6,7 +6,7 @@ dependencies:
   name: elasticsearch-chart
   repository: file://appr_charts/samsung_cnct/elasticsearch-chart
   tags: null
-  version: 0.0.0-20
+  version: 0.0.0-25
 - alias: ""
   condition: ""
   enabled: false
